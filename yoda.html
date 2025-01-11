@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflect with Yoda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-900 text-white font-bold">
+  <!-- Header -->
+  <header class="bg-green-800 text-white py-4">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl">Reflect-o-Matic</h1>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-blue-300">Home</a></li>
+        <li><a href="heroes.html" class="hover:text-blue-300">Heroes</a></li>
+        <li><a href="yoda.html" class="hover:text-blue-300">Yoda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Yoda Reflection Section -->
+  <main class="flex flex-col items-center py-12">
+    <section class="bg-green-700 p-6 rounded-lg text-white max-w-xl text-center shadow-md">
+      <h2 class="text-4xl mb-6">Reflect with Yoda</h2>
+      <p class="mb-4 italic">“Patience, young Padawan. Click the stones to uncover wisdom.”</p>
+      <div id="zen-garden" class="flex justify-center items-center gap-6">
+        <div class="stone bg-gray-500 w-16 h-16 rounded-full cursor-pointer"></div>
+        <div class="stone bg-gray-400 w-20 h-20 rounded-full cursor-pointer"></div>
+        <div class="stone bg-gray-600 w-24 h-24 rounded-full cursor-pointer"></div>
+      </div>
+      <p id="yodaReflection" class="mt-6 text-xl"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-800 text-center py-4">
+    <p>Reflect-o-Matic © 2025 | Powered by the Force</p>
+  </footer>
+
+  <script src="yoda.js"></script>
+</body>
+</html>
