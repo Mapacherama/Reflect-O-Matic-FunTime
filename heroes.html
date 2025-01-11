@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes Reflect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-bold">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-4">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl">Reflect-o-Matic</h1>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-blue-300">SpongeBob & Patrick</a></li>
+        <li><a href="heroes.html" class="hover:text-blue-300">Batman & Superman</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Batman & Superman Reflection Section -->
+  <main class="flex flex-col items-center py-8">
+    <section class="bg-black shadow-md p-6 rounded-lg w-11/12 max-w-lg mb-6">
+      <h2 class="text-3xl text-center text-gray-200 mb-4">Batman's Reflection</h2>
+      <div class="space-y-4">
+        <label class="block">
+          <span>Crime Stopped Today:</span>
+          <input id="crimeStopped" type="range" min="0" max="100" value="70" class="w-full">
+        </label>
+        <button id="batmanButton" class="bg-gray-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-gray-700 w-full">
+          Reflect with Batman
+        </button>
+      </div>
+      <p id="batmanOutput" class="text-center text-lg mt-4"></p>
+    </section>
+
+    <section class="bg-blue-600 shadow-md p-6 rounded-lg w-11/12 max-w-lg">
+      <h2 class="text-3xl text-center text-white mb-4">Superman's Reflection</h2>
+      <div class="space-y-4">
+        <label class="block">
+          <span>People Saved Today:</span>
+          <input id="peopleSaved" type="range" min="0" max="100" value="85" class="w-full">
+        </label>
+        <button id="supermanButton" class="bg-red-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-red-700 w-full">
+          Reflect with Superman
+        </button>
+      </div>
+      <p id="supermanOutput" class="text-center text-lg mt-4"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center text-white py-4">
+    <p>Reflect-o-Matic © 2025 | Powered by Heroes & Legends</p>
+  </footer>
+
+  <script src="heroes.js"></script>
+</body>
+</html>
